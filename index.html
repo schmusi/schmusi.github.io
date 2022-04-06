@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Schmusi</title>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+        const episodes = 62;
+        const body = document.getElementsByTagName("body")[0];
+
+        for (schritt = 1; schritt <= episodes; schritt++) {
+          var image = document.createElement('img');
+          image.src = "schmus" + schritt.toString().padStart(3, "0") + ".jpg";
+          image.loading = "lazy";
+          image.style = "width: 100%";
+          document.body.append(image);
+        }
+      });
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
